@@ -155,8 +155,6 @@ a::first-letter {
   height: 40px;
 }
 
-
-
 #footer a {
   font-size: 20px;
   letter-spacing: 1px;
@@ -436,6 +434,7 @@ a::first-letter {
     position: sticky;
     top: 0px;
     background: #222;
+    width:100%;
   }
 
   #main p {
