@@ -97,7 +97,6 @@ img:hover {
   width: 100%;
   background-color: #111;
   background: linear-gradient(to bottom, #000, #565555);
-  /*height: 79px;*/
   height: 50px;
   display: flex;
   align-items: center;
@@ -201,12 +200,13 @@ a::first-letter {
   #header {
     border-bottom: 2px solid #000;
     gap: 10px;
+    width:400px;
   }
 
   #main {
     margin: 5px auto;
     padding: 10px auto;
-    width: 450px;
+    width: 400px;
     height: calc(100vh - 140px);
     height: calc(100vh - 90px);
     font-size: 20px;
@@ -226,16 +226,19 @@ a::first-letter {
     position: sticky;
     top: 0px;
     background: #222;
+    box-sizing:border-box;
   }
 
   #main div {
     background-color: rgba(60, 146, 138, 0.201);
     min-height: fit-content;
+    box-sizing:border-box;
   }
 
   #main p {
     text-align: justify;
     padding: 33px auto;
+    box-sizing:border-box;
   }
 
   #side-right {
@@ -258,8 +261,8 @@ a::first-letter {
 
   .boster {
     border: 6px solid rgba(255, 255, 255, 0.374);
-    /*height: calc(100%-18%);*/
-    width: 100%;
+    width: 400px;
+    box-sizing:border-box;
   }
 }
 
