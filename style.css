@@ -180,7 +180,7 @@ a::first-letter {
 @media(max-width:500px) {
   .boster {
     width:100%;
-    min-width: 300px;
+    /*min-width: 300px;*/
     margin: auto;
   }
 
