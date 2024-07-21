@@ -109,7 +109,8 @@ img:hover {
 
 #footer {
   margin-top: 0;
-  /*width: 400px;*/
+  width:100%;
+  /*min-width: 400px;*/
   background-color: #111;
   height: 30px;
   display: flex;
@@ -292,6 +293,10 @@ a::first-letter {
     border: 6px solid rgba(255, 255, 255, 0.374);
     width: 350px;
     box-sizing:border-box;
+  }
+  #footer{
+    min-width:300px;
+    width:100%;
   }
 }
 
