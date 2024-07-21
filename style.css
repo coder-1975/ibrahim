@@ -185,7 +185,6 @@ a::first-letter {
     align-items:center;
     justify-content:space-between;
     border-bottom: 2px solid #000;
-    gap: 5px;
     width:350px;
   }
   #header a {
@@ -198,7 +197,6 @@ a::first-letter {
     min-width: 115px;
     min-height: 40px;
     max-height: 50px;
-    padding: 3px 1px;
     transition: 1s;
     cursor: grabbing;
     background: linear-gradient(to top, #333, #444, #666);
