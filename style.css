@@ -258,6 +258,7 @@ a::first-letter {
     text-align: justify;
     padding: 33px auto;
     box-sizing:border-box;
+    font-size:20px;
   }
 
   #side-right {
