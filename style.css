@@ -179,7 +179,8 @@ a::first-letter {
 
 @media(max-width:500px) {
   .boster {
-    width: 350px !important;
+    width:100%;
+    min-width: 300px;
     margin: auto;
   }
 
@@ -291,7 +292,7 @@ a::first-letter {
 
   .boster {
     border: 6px solid rgba(255, 255, 255, 0.374);
-    width: 350px;
+    width: 100%;
     box-sizing:border-box;
   }
   #footer{
