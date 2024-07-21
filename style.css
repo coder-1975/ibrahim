@@ -194,7 +194,34 @@ a::first-letter {
     gap: 10px;
     width:400px;
   }
-
+  #header a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgba(4, 4, 13, 0.704);
+    text-decoration: none;
+    font-weight: bold;
+    max-width: 100px;
+    min-width: 100px;
+    min-height: 40px;
+    max-height: 50px;
+    padding: 3px 0;
+    transition: 1s;
+    cursor: grabbing;
+    background: linear-gradient(to top, #333, #444, #666);
+  }
+  
+  a:hover::first-letter {
+    text-shadow: 1px 1px 1px black;
+    transition: 2s;
+    cursor: pointer;
+  }
+  
+  a::first-letter {
+    text-shadow: 1px 1px 1px snow;
+    transition: 2s;
+    cursor: pointer;
+    font-size: 25px;
+  }
   #main {
     margin: 5px auto;
     padding: 10px auto;
