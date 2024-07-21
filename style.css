@@ -252,6 +252,7 @@ a::first-letter {
     box-sizing:border-box;
     with:100%;
     padding:15px auto;
+    min-width:350px !important;
   }
 
   #main div {
