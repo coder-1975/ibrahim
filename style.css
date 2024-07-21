@@ -7,7 +7,7 @@
 body {
 
   height: 100vh;
-  background-color: khaki;/*#191919;*/
+  background-color:#191919;/* khaki #191919;*/
   color: rgba(255, 255, 255, 0.6);
   overflow: hidden;
   text-align: center;
@@ -23,7 +23,7 @@ img:hover {
 }
 
 #main div {
-  background-color: red;/*rgba(146, 60, 60, 0.201);*/
+  background-color:rgba(146, 60, 60, 0.201);/* red;/*rgba(146, 60, 60, 0.201);*/
 }
 
 #main {
@@ -248,12 +248,12 @@ a::first-letter {
     min-height: 95px;
     position: sticky;
     top: 0px;
-    background:green;/* #222;*/
+    background:#222222;/*green; #222;*/
     box-sizing:border-box;
   }
 
   #main div {
-    background-color:blue;/* rgba(60, 146, 138, 0.201);*/
+    background-color:rgba(60, 146, 138, 0.201); /*blue; rgba(60, 146, 138, 0.201);*/
     min-height: fit-content;
     box-sizing:border-box;
     width:fit-content;
