@@ -83,12 +83,12 @@ img:hover {
 
 #main p {
   text-align: justify;
-  padding: 28px auto;
+  padding: 28px 8px;
   margin-bottom: 15px;
   font-family: "Sofia", sans-serif;
   font-size: 22px;
   color: #111 !important;
-  background:orange;
+  background:orange !important;
 }
 
 #header {
