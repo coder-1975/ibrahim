@@ -27,7 +27,7 @@ img:hover {
 }
 
 #main {
-  width: 400px;
+ /* width: 400px;*/
   height: 400px;
   background-color: #e4dede78;
   color: rgba(255, 255, 255, 0.6);
@@ -92,7 +92,7 @@ img:hover {
 
 #header {
   margin-top: 0;
-  width: 100%;
+  /*width: 100%;*/
   background-color: #111;
   background: linear-gradient(to bottom, #000, #565555);
   height: 50px;
@@ -106,7 +106,7 @@ img:hover {
 
 #footer {
   margin-top: 0;
-  width: 400px;
+  /*width: 400px;*/
   background-color: #111;
   height: 30px;
   display: flex;
@@ -166,7 +166,7 @@ a::first-letter {
 
 .boster {
   border: 12px solid rgba(255, 255, 255, 0.374);
-  width: 400px;
+  /*width: 400px;*/
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: auto;
@@ -262,7 +262,7 @@ a::first-letter {
 
   #main p {
     text-align: justify;
-    padding: 33px auto;
+    padding: 33px 5px;
     box-sizing:border-box;
     font-size:20px;
   }
