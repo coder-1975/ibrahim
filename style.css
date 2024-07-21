@@ -252,7 +252,7 @@ a::first-letter {
     box-sizing:border-box;
     with:100%;
     padding:15px auto;
-    min-width:330px !important;
+    min-width:310px !important;
   }
 
   #main div {
