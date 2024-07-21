@@ -23,7 +23,7 @@ img:hover {
 }
 
 #main div {
-  background-color: rgba(146, 60, 60, 0.201);
+  background-color: red;/*rgba(146, 60, 60, 0.201);*/
 }
 
 #main {
@@ -99,7 +99,7 @@ img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   border-bottom: 1px solid black !important;
   font-family: "Trirong", serif;
 }
@@ -194,7 +194,7 @@ a::first-letter {
     text-decoration: none;
     font-weight: bold;
     max-width: 120px;
-    min-width: 120px;
+    min-width: 115px;
     min-height: 40px;
     max-height: 50px;
     padding: 3px 0;
@@ -249,12 +249,12 @@ a::first-letter {
     min-height: 95px;
     position: sticky;
     top: 0px;
-    background: #222;
+    background:green;/* #222;*/
     box-sizing:border-box;
   }
 
   #main div {
-    background-color: rgba(60, 146, 138, 0.201);
+    background-color:blue;/* rgba(60, 146, 138, 0.201);*/
     min-height: fit-content;
     box-sizing:border-box;
     width:fit-content;
