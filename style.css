@@ -227,7 +227,7 @@ a::first-letter {
   #main {
     margin: 5px auto;
     padding: 10px auto;
-    width: 350px;
+    min-width: 300px;
     height: calc(100vh - 140px);
     height: calc(100vh - 90px);
     font-size: 20px;
@@ -250,7 +250,7 @@ a::first-letter {
     top: 0px;
     background:#222222;/*green; #222;*/
     box-sizing:border-box;
-    with:100%;
+    width:100%;
     padding:15px auto;
     min-width:310px !important;
   }
