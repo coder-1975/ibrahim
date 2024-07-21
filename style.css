@@ -213,7 +213,7 @@ a::first-letter {
     text-align: justify;
   }
   #main::-webkit-scrollbar {
-    display:hidden;
+    display:none;
   }
   #main #demo {
     text-align: center;
