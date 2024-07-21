@@ -198,7 +198,7 @@ a::first-letter {
     min-width: 115px;
     min-height: 40px;
     max-height: 50px;
-    padding: 3px 0;
+    padding: 3px 1px;
     transition: 1s;
     cursor: grabbing;
     background: linear-gradient(to top, #333, #444, #666);
