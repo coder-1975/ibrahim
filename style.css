@@ -212,7 +212,9 @@ a::first-letter {
     font-size: 20px;
     text-align: justify;
   }
-
+  #main::-webkit-scrollbar {
+    display:hidden;
+  }
   #main #demo {
     text-align: center;
     font-family: Sofia;
