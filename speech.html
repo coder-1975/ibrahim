@@ -411,8 +411,10 @@
           list.some((key) => utterThis.text.includes(key))
         ) {
           utterThis.volume = 0.1;
-          textInput.value = " \n";
-
+          //textInput.value = " \n";
+          // Add period of time befire this action
+          setTimeout(()=>{
+          },50);
           textInput.focus();
           start();
           document.getElementById("talk").style.visibility !== "visible"
