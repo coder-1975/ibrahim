@@ -564,7 +564,8 @@
       }
 
       // تحديث الأصوات عند التحميل (للمتصفحات المختلفة)
-      populateVoices();
+      //populateVoices();
+      speechSynthesis.onvoiceschanged = populateVoices;
       if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = populateVoices;
       }
