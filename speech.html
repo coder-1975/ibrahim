@@ -140,7 +140,8 @@
 
       .speechBox {
         font-family: sans-serif;
-        direction: rtl;
+        direction: ltr;
+        text-align:left;
         padding: 14px;
         border: 1px solid #ccc;
         border: 0.1px solid #ccccccc2;
@@ -153,13 +154,6 @@
 
       #textInput {
         resize: none;
-        background-color: rgba(0, 0, 0, 0.74);
-        background: linear-gradient(
-          to left,
-          rgb(46, 10, 10),
-          rgb(5, 5, 36),
-          rgb(5, 22, 5)
-        );
         background-image: url(backLines.jpg);
         background-size: cover;
         background-position: center;
@@ -522,7 +516,7 @@
           }
         } else {
           textInput.focus();
-
+          textInput.lang="en";
           if (
             words.startsWith("What") ||
             words.startsWith("When") ||
