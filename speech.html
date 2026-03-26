@@ -547,7 +547,7 @@
       // 1. تعبئة قائمة الأصوات المتاحة
       function populateVoices() {
         voices = synth.getVoices();
-        voices = voices.filter(voice=> voice.lang.startsWith('en-US')); // new code to let just eng to be spoken
+        //voices = voices.filter(voice=> voice.lang.startsWith('en-US')); // new code to let just eng to be spoken
         voiceSelect.innerHTML = "";
         // .slice(0, 0)
         voices.forEach((voice) => {
@@ -613,8 +613,7 @@
           } else {
             utterThis.volume = vol.value;
           }
-          voiceSelect.selectedOptions[0].getAttribute("data-name");
-          utterThis.voice = voices.find((v) => v.name === selectedVoiceName);
+          
           synth.speak(utterThis);
         }
       }
