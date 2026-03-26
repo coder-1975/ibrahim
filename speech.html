@@ -553,6 +553,7 @@
       // 1. تعبئة قائمة الأصوات المتاحة
       function populateVoices() {
         voices = synth.getVoices();
+        voices = voices.filter(voice=> voice.lang.startsWith('en')); // new code to let just eng to be spoken
         voiceSelect.innerHTML = "";
         // .slice(0, 0)
         voices.forEach((voice) => {
@@ -565,7 +566,7 @@
 
       // تحديث الأصوات عند التحميل (للمتصفحات المختلفة)
       populateVoices();
-      speechSynthesis.onvoiceschanged = populateVoices;
+      //speechSynthesis.onvoiceschanged = populateVoices;
       if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = populateVoices;
       }
