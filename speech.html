@@ -619,7 +619,8 @@
           } else {
             utterThis.volume = vol.value;
           }
-
+          voiceSelect.selectedOptions[0].getAttribute("data-name");
+          utterThis.voice = voices.find((v) => v.name === selectedVoiceName);
           synth.speak(utterThis);
         }
       }
