@@ -552,15 +552,16 @@
         // .slice(0, 0)
         voices.forEach((voice) => {
           const option = document.createElement("option");
-          option.textContent = `${voice.name.slice(0, 0)} (${voice.lang})`;
+          //option.textContent = `${voice.name.slice(0, 0)} (${voice.lang})`;
+           option.textContent = `${voice.name} (${voice.lang})`;
           option.setAttribute("data-name", voice.name);
           voiceSelect.appendChild(option);
         });
       }
 
       // تحديث الأصوات عند التحميل (للمتصفحات المختلفة)
-      populateVoices();
-      //speechSynthesis.onvoiceschanged = populateVoices;
+      //populateVoices();
+      speechSynthesis.onvoiceschanged = populateVoices;
       if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = populateVoices;
       }
