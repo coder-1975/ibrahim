@@ -70,7 +70,6 @@
       input[type="range"] {
         overflow: hidden;
         appearance: none;
-        background: #2e2327;
         background: linear-gradient(
           to left,
           #9c8e67 0%,
@@ -81,10 +80,11 @@
       }
 
       input[type="range"]::-webkit-slider-thumb {
-        width: 8px;
+        width: 12px;
         appearance: none;
         height: 12px;
         background: black;
+        border-left:1ps solid grey;
         border-radius: 2px;
         cursor: grab;
       }
