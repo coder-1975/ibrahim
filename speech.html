@@ -589,9 +589,19 @@
           const utterThis = new SpeechSynthesisUtterance(textInput.value);
 
           // تطبيق الصوت المختار
-          const selectedVoiceName =
+          /*const selectedVoiceName =
             voiceSelect.selectedOptions[0].getAttribute("data-name");
-          utterThis.voice = voices.find((v) => v.name === selectedVoiceName);
+          utterThis.voice = voices.find((v) => v.name === selectedVoiceName);*/
+
+          const selectedVoice = voices.find( // new code 
+                (v) => v.name === selectedVoiceName
+          );
+
+          if (selectedVoice) {
+            utterThis.voice = selectedVoice;
+          } else {
+            utterThis.voice = voices[0]; // fallback
+          } //////////////////////////////// end new code 
 
           // تطبيق الإعدادات (الحدة والسرعة)
           utterThis.pitch = pitch.value;
