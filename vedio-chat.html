@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Live Video Chat</title>
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+    <h2>Your ID: <span id="my-id">...</span></h2>
+    <input type="text" id="peer-id" placeholder="Enter Friend's ID">
+    <button onclick="makeCall()">Call</button><br><br>
+    <video id="local-video" autoplay muted style="width:300px; border:1px solid black;"></video>
+    <video id="remote-video" autoplay style="width:300px; border:1px solid black;"></video>
+
+    <script>
+        const peer = new Peer(); // Connects to PeerJS cloud signaling server
+        let localStream;
+
+        // 1. Get your ID and camera
+        peer.on('open', id => { document.getElementById('my-id').innerText = id; });
+        navigator.mediaDevices.getUserMedia({video: true, audio: true}).then(stream => {
+            localStream = stream;
+            document.getElementById('local-video').srcObject = stream;
+        });
+
+        // 2. Answer incoming calls
+        peer.on('call', call => {
+            call.answer(localStream);
+            call.on('stream', remoteStream => {
+                document.getElementById('remote-video').srcObject = remoteStream;
+            });
+        });
+
+        // 3. Start a call
+        function makeCall() {
+            const friendId = document.getElementById('peer-id').value;
+            const call = peer.call(friendId, localStream);
+            call.on('stream', remoteStream => {
+                document.getElementById('remote-video').srcObject = remoteStream;
+            });
+        }
+    </script>
+</body>
+</html>
