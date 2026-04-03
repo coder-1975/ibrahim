@@ -116,10 +116,8 @@
           generator.value = "";
         }
       };
-
-      document.getElementsByTagName("input").onfocus =()=>{
-        document.getElementsByTagName("input").placeholder ="";
-      }
+//getElementsByTagName
+    
     </script>
 
     <script
@@ -127,5 +125,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+        let allEl = document.getElementsByTagName("input");
+      allEl.onfocus =()=>{
+        allEl.placeholder ="";
+        console.log(" worked code ");
+      }
+    </script>
   </body>
 </html>
