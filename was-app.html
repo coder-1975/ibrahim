@@ -133,8 +133,16 @@
             el.onfocus =()=>{
            
             el.placeholder ="";
-            console.log(" worked code ");
+            console.log(" worked code on focus");
           }
+        /////
+        el.addEventListener("focusout", () => {
+            el.placeholder ="TYPE LIKE :201557389997";
+            console.log(" worked code on unfocus");
+        });
+
+
+        /////
       }
     
       
