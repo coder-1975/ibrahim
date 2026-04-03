@@ -145,6 +145,7 @@
       </div>
     </div>
     <script>
+      let txtInput = document.createElement("input");
       let generator = document.getElementById("g-input");
       let generatorBtn = document.getElementById("create");
       let generatorLinker = document.getElementById("mylinker");
@@ -166,6 +167,9 @@
       generatorBtn.onclick = () => {
         if (generator.value !== "") {
           if (!isNaN(generator.value)) {
+            generatorLinker.appendChild(txtInput);
+            txtInput.value ? msg=`${txtInput.value}` : msg;
+            mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
             generatorLinker.appendChild(mylink);
             generator.value = "";
           } else {
