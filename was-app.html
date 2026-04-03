@@ -127,13 +127,17 @@
     ></script>
     <script>
         const allEl = document.getElementsByTagName("input");
-      allEl.forEach((el)=>{
-      el.onfocus =(e)=>{
-        e.target.preventDefault();
-        el.placeholder ="";
-        console.log(" worked code ");
+      for (let i = 0; i < allEl.length; i++) {
+        let el = allEl[i];
+          allEl.forEach((el)=>{
+            el.onfocus =(e)=>{
+            e.target.preventDefault();
+            el.placeholder ="";
+            console.log(" worked code ");
+          }
       }
-        });
+    
+      
     </script>
   </body>
 </html>
