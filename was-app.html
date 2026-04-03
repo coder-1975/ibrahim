@@ -130,8 +130,8 @@
       for (let i = 0; i < allEl.length; i++) {
         let el = allEl[i];
          
-            el.onfocus =(e)=>{
-            e.target.preventDefault();
+            el.onfocus =()=>{
+           
             el.placeholder ="";
             console.log(" worked code ");
           }
