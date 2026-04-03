@@ -158,10 +158,17 @@
             
             //mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
             txtInput.oninput =()=> {
-              txtInput.value !==''? msg=`${txtInput.value}` : msg='Hello, my friend!';
+           
         mylink.textContent = `go to my whatsapp link`;
         mylink.target = "_blank";
-        mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
+              if(txtInput.value !==''){
+                msg = txtInput.value;
+                mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
+              }else{
+                msg ='Hello, my dear friend!';
+                mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
+              }
+   
         mylink.className = `fs-1 form-control bg-dark text-light tw-bold`;
             }
         mylink.onclick = () => {
@@ -175,7 +182,7 @@
           if (!isNaN(generator.value)) {
        
             generatorLinker.appendChild(mylink);
-            generator.value = "";
+            //generator.value = "";
           } else {
             generator.value = "";
           }
