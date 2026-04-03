@@ -150,13 +150,15 @@
       let generatorBtn = document.getElementById("create");
       let generatorLinker = document.getElementById("mylinker");
       let mylink = document.createElement("a");
+      let msg = "Hello, My friend!";
       generator.onchange = () => {
-        let msg = "Hello, My friend!";
+        
         //mylink.href = `https://wa.me/${generator.value}`;
              generatorLinker.appendChild(txtInput);
-            txtInput.value !==''? msg=`${txtInput.value}` : msg;
+            
             //mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
             txtInput.oninput =()=> {
+              txtInput.value !==''? msg=`${txtInput.value}` : msg='Hello, my friend!';
         mylink.textContent = `go to my whatsapp link`;
         mylink.target = "_blank";
         mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
