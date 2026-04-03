@@ -152,7 +152,9 @@
       let mylink = document.createElement("a");
       generator.onchange = () => {
         //mylink.href = `https://wa.me/${generator.value}`;
-
+             generatorLinker.appendChild(txtInput);
+            txtInput.value ? msg=`${txtInput.value}` : msg;
+            //mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
         let msg = "Hello, My friend!";
         mylink.textContent = `go to my whatsapp link`;
         mylink.target = "_blank";
@@ -167,9 +169,7 @@
       generatorBtn.onclick = () => {
         if (generator.value !== "") {
           if (!isNaN(generator.value)) {
-            generatorLinker.appendChild(txtInput);
-            txtInput.value ? msg=`${txtInput.value}` : msg;
-            mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
+       
             generatorLinker.appendChild(mylink);
             generator.value = "";
           } else {
