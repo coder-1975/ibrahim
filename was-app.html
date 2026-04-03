@@ -163,7 +163,7 @@
       </div>
     </div>
     <script>
-      let txtInput = document.createElement("input");
+      let txtInput = document.createElement("textarea");// from input to textarea
       let generator = document.getElementById("g-input");
       let generatorBtn = document.getElementById("create");
       let generatorLinker = document.getElementById("mylinker");
@@ -177,8 +177,8 @@
             //mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
             txtInput.oninput =()=> {
            
-        mylink.textContent = `go to my whatsapp link`;
-        mylink.target = "_blank";
+            mylink.textContent = `go to my whatsapp link`;
+            mylink.target = "_blank";
               if(txtInput.value !==''){
                 msg = txtInput.value;
                 mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
@@ -187,7 +187,7 @@
                 mylink.href = `https://api.whatsapp.com/send/?phone=${generator.value}&text=${msg}&type=phone_number&app_absent=0`;
               }
    
-        mylink.className = `fs-1 form-control bg-dark text-light tw-bold`;
+            mylink.className = `fs-1 form-control bg-dark text-light tw-bold`;
             }
         mylink.onclick = () => {
           generatorLinker.innerHTML = "";
