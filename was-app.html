@@ -126,11 +126,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        let allEl = document.getElementsByTagName("input");
-      allEl.onfocus =()=>{
-        allEl.placeholder ="";
+        const allEl = document.getElementsByTagName("input");
+      allEl.forEach((el)=>{
+      el.onfocus =(e)=>{
+        e.target.preventDefault();
+        el.placeholder ="";
         console.log(" worked code ");
       }
+        });
     </script>
   </body>
 </html>
