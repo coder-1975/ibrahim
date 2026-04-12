@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOUGLISH </title>
+    <style>
+        *{
+           
+           line-height:250%;
+           font-size:.6rem;
+           overflow:hidden;
+           outline:none;
+           border:none;
+           background-color:#123;
+ 
+        
+         }
+        body{
+            background-color:#123;
+            padding:17% 35%;
+            
+        }
+        div{
+           display:flex;
+           padding:5px;
+           width:fit-content;
+           height:fit-content;
+        }
+        h2,span{
+            font-size:1.5rem;
+            color:white;
+  
+        }
+         input{
+           box-shadow:-2px 1px 3px 1px #234;
+border:2px solid #012;
+font-size:1.7rem;
+            color:white;
+padding:5px 1px;
+ 
+         }
+     button{
+ color:#456;
+background-color:#012;
+border:2px solid #011;
+font-size:1.7rem;
+padding:5px 1px;
+           box-shadow:2px 6px 5px 3px #234;
+         }
+button:hover{
+background-color:#001;
+ box-shadow:1px 1px 1px 1px #234;
+cursor:pointer;
+
+}
+    </style>
+</head>
+<body>
+    <h2>WORD: <span id="my-id">...</span></h2>
+    <div>
+    <input type="text" id="word-id" placeholder="Enter Word!">
+    <button onclick="wordCall()">FIND</button><br><br>
+   </div>
+    <script>
+        let wordInput = document.getElementById("word-id");
+        let link="https://youglish.com/pronounce/co_dependant/english/us";
+        let start ="https://youglish.com/";
+        let end ="/english/us";
+        let word="";
+         wordInput.onchange=()=>{
+                    word = wordInput.value;
+              }
+         if(word ===""){
+              wordInput.onchange=()=>{
+                    word = wordInput.value;
+              }
+        }else{}
+        if(word !==""){
+             link=`https://youglish.com/pronounce/${word}/english/us`;
+        }else{}
+
+        function wordCall(){
+             
+              if(word !==""){
+                    window.open(`https://youglish.com/pronounce/${word}/english/us`,"_blank");
+             }else{}
+        }
+    </script>
+</body>
+</html>
