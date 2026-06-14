@@ -133,10 +133,12 @@
 
             <div class="container  text-dark d-flex justify-content-around align-items-center p-0 ">
                 <div
-                    class="text-dark fw-bold rounded border border-primary bg-gray-300  p-4 pt-1 pb-1 col-8 p-2 p-md-4 p-lg-5">
-                    <h1 class="text-dark fw-bold rounded border border-primary bg-primary  ps-2">POWER ACADEMY</h1>
+                    class="text-dark fw-bold rounded border border-primary bg-gray-300 pt-1 pb-1 col-8 me-3 p-2 p-md-4 p-lg-5">
+                    <h1 class="text-dark fw-bold rounded border border-primary bg-primary  ps-2 fs-5 pe-2 ">POWER ACADEMY</h1>
                     <p class="pb-0  mb-0 fs-4  text-center text-success border border-1 border-success">
-                        <a href="https://wa.me/201274179870" class="text-success ps-2">JOIN WHATSAPP</a>
+                        <a href="https://wa.me/201274179870" class="text-success ps-2 fs-5">
+                            JOIN WHATSAPP
+                        </a>
                     </p>
                 </div>
                 <div
@@ -224,30 +226,28 @@
         crossorigin="anonymous"></script>
 
     <script>
-        function logic() {
-            let pagetitle = "";
-            let page = document.getElementById("mytitle");
-            pagetitle = page.innerText;
-            if (pagetitle === "Power-Academy") {
-                let tit = "Home";
-                document.getElementById("mylink").innerText = tit;
-            }
-            else if (pagetitle === "Power-Academy-Subjects") {
-                let tit = "Subject";
-                document.getElementById("mylink").innerText = tit;
-            }
+         function logic() {
+                let pagetitle = "";
+                let page = document.getElementById("mytitle");
+                pagetitle = page.innerText;
+                if (pagetitle === "Power-Academy") {
+                    //document.getElementById("mylink").innerText = "Home";
+                }
+                else if (pagetitle === "Power-Academy-Subjects") {
 
-            else if (pagetitle === "Power-Academy-Teachers") {
-                let tit = "Teacher";
-                document.getElementById("mylink").innerText = tit;
-            }
+                    document.getElementById("mylink").innerText = "Subject";
+                }
 
-            else {
-                document.getElementById("mylink").innerText = "";
-            }
-        }
+                else if (pagetitle === "Power-Academy-Teachers") {
 
-        logic();
+                    document.getElementById("mylink").innerText = "Teacher";
+                }
+
+                else {
+                    document.getElementById("mylink").innerText = "";
+                }
+            }
+            logic();
     </script>
 </body>
 
